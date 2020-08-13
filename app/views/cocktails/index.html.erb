@@ -1,12 +1,14 @@
-<h1>Cocktails</h1>
-<hr>
-<br>
-<ul class="list-group">
+<h1 class="mt-4">All our Cocktails (<%= @cocktails.length %>)</h1>
+  <div class="row justify-content-between">
   <% @cocktails.each do |c| %>
-    <li class="list-group-item"> <%= c.name %> </li>
-    <%= link_to "See details", cocktail_path(c.id), class: "btn btn-primary"%>
-    <hr>
+    <div class="card my-4" style="width: 18rem;">
+    <img class="card-img-top" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f368d67567421.5b3e148876e4c.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= c.name %></h5>
+        <%= link_to "Ingredients & doses", cocktail_path(c.id), class: "btn btn-outline-primary my-2 ml-2 my-sm-0"%>
+      </div>
+    </div>
   <% end %>
-</ul>
+  </div>
 
 <%= link_to "Add a new Cocktail", new_cocktail_path %>
