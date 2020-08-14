@@ -21,11 +21,10 @@ results["drinks"].each do |ingredient|
 end
 
 puts "Creating Cocktails..."
-cocktails = ("Bloody Mary, Russe blanc, Octobre rouge, Screwdriver, Trou noir, Chien enragé, PPP").split(",")
+cocktails = ("Bloody Mary, Russe blanc, Octobre rouge, Trou noir, Chien enragé, PPP").split(",")
 images = ["https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f368d67567421.5b3e148876e4c.jpg",
           "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/03c2b567567421.5b3e148877229.jpg",
           "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/da29b267567421.5b3e148876a2a.jpg",
-          "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5b96cc67567421.5b3e14891c263.jpg",
           "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4b8fe567567421.5b3e148997f24.jpg",
           "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e3195267567421.5b3e1489976b8.jpg",
           "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b780a667567421.5b3e148ac6501.jpg"

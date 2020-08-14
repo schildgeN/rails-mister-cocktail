@@ -1,15 +1,29 @@
-<h1> <%= @cocktail.name %> </h1>
-
-<ul class="list-group my-3">
-  <% @cocktail.doses.each do |dose| %>
-    <li class="list-group-item">
-      <%= dose.description %> of <%= dose.ingredient.name %>
-      <%= link_to "🗑",
+<div class="row justify-content-around mt-4">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="<%= @cocktail.image %>" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><%= @cocktail.name %></h5>
+        <p class="card-text">
+          <ul class="list-group my-3">
+            <% @cocktail.doses.each do |dose| %>
+            <li style="list-style-type: none;"> -
+              <%= dose.description %> of <%= dose.ingredient.name %>
+              <%= link_to "🗑",
                   dose_path(dose),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>
-  <% end %>
-</ul>
+            <% end %>
+          </ul></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
 <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %>
 <br>

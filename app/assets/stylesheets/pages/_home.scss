@@ -1,1 +1,45 @@
-// Specific CSS for your home-page
+/*// Specific CSS for your home-page
+// .container {
+//   background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/28e27b67567421.5b90f424a455e.jpg');
+//   background-repeat: no-repeat;
+//   padding-top: 150px;
+// }*/
+
+.title  {
+  font-family: 'Yellowtail', cursive;
+  font-size: 120px;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+#hof {
+  cursor: pointer;
+}
+#allc {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.petit {
+  font-size: 20px;
+}
+
+.h2-group {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.lien-git{
+  color: #000;
+  &:hover{color: blue;}
+}
+
+/*
+.hof-card-between{
+  justify-content: space-between;
+}
+.hof-card-center{
+  justify-content: center;
+}*/

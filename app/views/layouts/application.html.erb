@@ -6,14 +6,13 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
       <a class="navbar-brand" href="/cocktails">Cocktail Maker</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,14 +21,19 @@
       <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-outline-primary my-2 ml-2 my-sm-0"%>
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    </nav>
+    </nav> -->
 
     <div class="container text-center">
       <%= yield %>
     </div>
+    <div class="footer text-center">
+      <p> Made with ♡ at Le Wagon #439 | <a href="https://github.com/schildgeN" target="_blank" class="lien-git"> schildgeN <i class="fab fa-github-square" class="lien-git"></i></a></p>
+      <a href="https://www.behance.net/TobiasHall" target="blank"> Credit images to Tobias !</a>
+    </div>
+
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
